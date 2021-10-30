@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mihailryzij0/Study-Otus/issues"
   },
-  "homepage": "https://github.com/mihailryzij0/Study-Otus#readme"
+  "homepage": "https://github.com/mihailryzij0/Study-Otus#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
