@@ -3,6 +3,6 @@ export function calc(a, b) {
     return console.log(NaN);
   }
   const sum = a + b;
-    const mult = a * b;
+  const mult = a * b;
   return console.log(sum, mult);
 }
