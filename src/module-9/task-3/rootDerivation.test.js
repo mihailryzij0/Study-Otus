@@ -7,7 +7,7 @@ describe("rootDerivation", () => {
       .mockReturnValueOnce(4)
       .mockReturnValueOnce(6)
       .mockReturnValueOnce(9);
-    expect(rootDerivation()).toBe([0]);
+    expect(rootDerivation()).toStrictEqual([0]);
   });
   it("returns [-1, -1.5] for a = 20, b =50 ,c = 30", () => {
     jest
@@ -15,6 +15,6 @@ describe("rootDerivation", () => {
       .mockReturnValueOnce(20)
       .mockReturnValueOnce(50)
       .mockReturnValueOnce(30);
-    expect(rootDerivation()).toBe([-1, -1.5]);
+    expect(rootDerivation()).toStrictEqual([-1, -1.5]);
   });
 });
