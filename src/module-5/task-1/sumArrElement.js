@@ -1,8 +1,5 @@
 export function sumArrElement(array) {
-  let sum = 0;
-  array.forEach((element) => {
-    sum += element;
-  });
+  const result = array.reduce((sum, current) => sum + current);
 
-  return console.log(sum);
+  return console.log(result);
 }

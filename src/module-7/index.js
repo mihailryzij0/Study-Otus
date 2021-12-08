@@ -1,3 +1,3 @@
-import { createParagraph } from "./createParagraph";
+import { createParagraph } from "./createParagraph.js";
 
-createParagraph(document.querySelector(".block-paragraph"));
+createParagraph(document.querySelector(".paragraph"));

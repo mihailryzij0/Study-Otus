@@ -1,4 +1,5 @@
-export function createParagraph(el) {
+export function createParagraph(blockEl) {
+  const el = blockEl;
   el.innerHTML = `
       <input class="input" type="text">
       <button class="button" hidden="hidden">===</button>
@@ -26,16 +27,10 @@ export function createParagraph(el) {
   }
 
   input.addEventListener("input", () => {
-    const { value } = input;
-    if (value.length > 0) {
-      button.hidden = false;
-    } else {
-      buttonHidden();
-    }
+    button.hidden = !input.value;
   });
 
   button.addEventListener("click", () => {
-    const input = el.querySelector(".input");
     const text = el.querySelectorAll(".text");
     crieitElement();
     buttonHidden();
